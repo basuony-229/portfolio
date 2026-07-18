@@ -90,3 +90,26 @@ document.querySelectorAll('.project-images').forEach(container => {
   // Initialise
   goTo(0);
 });
+
+// ===== CV DOWNLOAD =====
+const cvBtn = document.getElementById("download-cv");
+
+if (cvBtn) {
+  cvBtn.addEventListener("click", () => {
+    const icon = cvBtn.querySelector("i");
+    const text = cvBtn.querySelector("span");
+
+    icon.className = "fas fa-spinner fa-spin";
+    text.textContent = "Preparing download...";
+
+    setTimeout(() => {
+      icon.className = "fas fa-check";
+      text.textContent = "Download Started";
+
+      setTimeout(() => {
+        icon.className = "fas fa-file-pdf";
+        text.textContent = "Download CV (PDF)";
+      }, 1800);
+    }, 500);
+  });
+}
