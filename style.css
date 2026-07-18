@@ -266,7 +266,7 @@ img { max-width: 100%; display: block; }
 .about-icon-card span { font-size: 0.76rem; color: var(--text-muted); }
 
 /* ===================== PROJECTS ===================== */
-.projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(370px, 1fr)); gap: 1.75rem; }
+.projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(520px, 1fr)); gap: 2rem; }
 .project-card {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -282,7 +282,9 @@ img { max-width: 100%; display: block; }
 /* Single definition — no duplicate grid override below */
 .project-images {
   position: relative;
-  height: 200px;
+  width: 100%;
+  aspect-ratio: 926 / 654;
+  /* height: 300px; */
   overflow: hidden;
   background: var(--surface2);
 }
