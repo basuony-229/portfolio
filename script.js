@@ -108,7 +108,7 @@ if (cvBtn) {
 
       setTimeout(() => {
         icon.className = "fas fa-file-pdf";
-        text.textContent = "Download CV (PDF)";
+        text.textContent = "Download CV";
       }, 1800);
     }, 500);
   });
